@@ -7,6 +7,7 @@ clean:
 	if exist installer\dist rmdir /s /q installer\dist
 	if exist installer\Output rmdir /s /q installer\Output
 build: clean install
+	pip install -i https://pypi.douban.com/simple pyinstaller
 	.\installer\build.cmd
 release: clean install
 	.\installer\build.cmd release

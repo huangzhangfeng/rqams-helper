@@ -31,7 +31,7 @@ setup(
         "bson",
         "python-dateutil",
         "logbook",
-        "rqctp",
+        "rqctp>=0.0.2",
         "rqams-client>=0.0.2",
     ]
 )
